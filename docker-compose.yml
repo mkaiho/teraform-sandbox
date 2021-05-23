@@ -1,0 +1,12 @@
+version: "3"
+services:
+  terraform-cli:
+    build: ./docker/workspace
+    container_name: terraform-cli
+    volumes:
+      - ./docker/workspace/terraform:/home/devuser/terraform-cli/terraform
+      - ./docker/workspace/.aws:/home/devuser/.aws
+      - ./docker/workspace/.ssh:/home/devuser/.ssh
+    env_file: ./docker/workspace/.env
+    working_dir: /home/devuser/terraform-cli/terraform
+    tty: true

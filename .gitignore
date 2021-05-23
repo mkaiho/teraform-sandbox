@@ -1,0 +1,5 @@
+docker/workspace/.env
+docker/workspace/.aws
+docker/workspace/terraform/.terraform*
+docker/workspace/terraform/terraform*
+docker/workspace/.ssh
