@@ -26,8 +26,6 @@
 
   - AmazonVPCFullAccess
 
-  - IAMFullAccess
-
 ## source clone
 
 ```.sh
@@ -35,7 +33,7 @@ git clone git@github.com:mkaiho/terraform-sandbox.git
 cd terraform-sandbox
 ```
 
-## generate ssh key for log in ec2 created by terraform
+## generate ssh key to log in ec2 created by terraform
 
 ```.sh
 ssh-keygen -t rsa -f ./docker/workspace/.ssh/id_rsa
